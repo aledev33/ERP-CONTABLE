@@ -28,3 +28,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Docker
+*.env.docker
+
+# User secrets nunca se versionan (viven fuera del repo, pero por si acaso)
+**/secrets.json

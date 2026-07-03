@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: erp-contable-db
+    environment:
+      POSTGRES_USER: erp_dev
+      POSTGRES_PASSWORD: dev_password_local
+      POSTGRES_DB: erp_contable_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - erp_contable_data:/var/lib/postgresql/data
+
+volumes:
+  erp_contable_data:
