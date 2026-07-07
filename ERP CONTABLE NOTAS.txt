@@ -1,0 +1,11 @@
+PASOS PARA TRABAJAR ERP CONTABLE.
+
+1. Abrir Docker Desktop (GUI)
+2. Levantar la base de datos
+	cd /c/rutacompleta/ERP-CONTABLE
+	docker compose up -d
+	docker ps 	#Verifica que está corriendo
+3. Abrir editor (VS Code)
+4. Compilar
+	dotnet restore
+	dotnet build
